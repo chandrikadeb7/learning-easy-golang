@@ -15,7 +15,7 @@ func (m *Mango) getValue(quantity float64, price float64, buy bool) float64 {
 	value := 0.0
 	//calculate the overall amount if mango is bought
 	if buy {
-		value = m.Quantity * m.Price
+		value = quantity * price
 	}
 	return value
 }
