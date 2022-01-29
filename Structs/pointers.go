@@ -18,7 +18,8 @@ func (p *Point) Move(dx int, dy int, dz int) {
 
 func main() {
 	p := &Point{1, 2, 3}
-	p.Move(3, 2, 1)
+	fmt.Printf("Before Moving: %+v\n", *p)
 
-	fmt.Printf("After Moving: %+v\n", p)
+	p.Move(3, 2, 1)
+	fmt.Printf("After Moving: %+v\n", *p)
 }
